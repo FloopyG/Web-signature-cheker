@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ua">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,13 +7,13 @@
     <title>Ohoniuk Nazar`s eSign validator.</title>
 </head>
 <body>
-    <label for="doc">Загрузите файл с документом</label>
+    <label for="doc">Завантажте файл с документом</label>
     <input id="doc" type="file" accept=".doc, .docx, .pdf" onChange="readDoc('doc')">
     <br><br>
-    <label for="sig">Загрузите файл с подписью</label>
+    <label for="sig">Завантажте файл с підписом</label>
     <input id="sig" type="file" accept=".sig, .asc" onChange="readDoc('sig')">
     <br><br>
-    <button type="button" disabled onClick="check()">Проверить</button>
+    <button type="button" disabled onClick="check()">Перевірити</button>
     <output></output>
     
     <script src="openpgp.min.js"></script>
