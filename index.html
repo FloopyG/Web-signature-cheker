@@ -8,10 +8,10 @@
 </head>
 <body>
     <label for="doc">Загрузите файл с документом</label>
-    <input id="doc" type="file" onChange="readDoc('doc')">
+    <input id="doc" type="file" accept=".doc, .docx, .pdf" onChange="readDoc('doc')">
     <br><br>
     <label for="sig">Загрузите файл с подписью</label>
-    <input id="sig" type="file" onChange="readDoc('sig')">
+    <input id="sig" type="file" accept=".sig, .asc" onChange="readDoc('sig')">
     <br><br>
     <button type="button" disabled onClick="check()">Проверить</button>
     <output></output>
